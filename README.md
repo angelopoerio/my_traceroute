@@ -1,5 +1,5 @@
 # Introduction
-This package contains a full working implementation of traceroute written in golang. It supports both IPv4 and IPv6
+This package contains a full working implementation of traceroute written in golang. It supports both IPv4 and IPv6.
 It works in the following way:
 
 * an ICMP echo request gets sent to the destination host, the TTL (or HopLimit for the IPv6 case) is controlled and increased at each step
@@ -36,7 +36,7 @@ of the Golang compiler / runtime.
 The current directory is a git repo as well, so it is possible to explore the commits history issuing the command "git log -v"
 
 # How to build
-It is enough to **cd src** in the directory of the project and issue the command **go build -o traceroute **. This will produce a statically linked executable named **traceroute** that it's ready to be used. No external libraries are required by the tool to run
+It is enough to **cd src** in the directory of the project and issue the command **go build -o traceroute**. This will produce a statically linked executable named **traceroute** that it's ready to be used. No external libraries are required by the tool to run
 
 # How to run the unit tests
 It is enough to **cd src** in the directory of the project and issue the command **go test**.
