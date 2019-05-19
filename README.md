@@ -40,7 +40,8 @@ It is enough to **cd src** in the directory of the project and issue the command
 
 # How to run the unit tests
 It is enough to **cd src** in the directory of the project and issue the command **go test**.
-IMPORTANT: under the hood the tests will trigger a real traceroute session so the right permissions are required to be successful
+
+**IMPORTANT:** under the hood the tests will trigger a real traceroute session so the right permissions are required to be successful
 
 # How to run the tool
 The tool can be run as the following example (ipv4):
