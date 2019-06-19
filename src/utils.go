@@ -31,7 +31,7 @@ func dnsResolve(hostname string, isIPv6 bool, dst *net.IPAddr) {
 				dst.IP = ip
 				fmt.Printf("%s resolved to %s, using this ipv6 address for tracing\n", hostname, ip)
 				break
-				/* look for the "A" record containing the ipv6 address we want to resolve */
+				/* look for the "A" record containing the ipv4 address we want to resolve */
 			} else if !isIPv6 && ip.To4() != nil {
 				dst.IP = ip
 				fmt.Printf("%s resolved to %s, using this ipv4 address for tracing\n", hostname, ip)
